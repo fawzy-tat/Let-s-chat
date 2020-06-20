@@ -9,6 +9,12 @@ var debug = require('debug')('let-s-chat:server');
 var http = require('http');
 
 /**
+ * Socket.io implementaion
+ */
+
+let socketAPI = require('../socketAPI');
+
+/**
  * Get port from environment and store in Express.
  */
 
@@ -21,6 +27,10 @@ app.set('port', port);
 
 var server = http.createServer(app);
 
+/**
+ * Socket.io implementaion
+ */
+socketAPI.io.attach(server);
 /**
  * Listen on provided port, on all network interfaces.
  */
