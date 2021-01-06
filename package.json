@@ -16,7 +16,7 @@
     "socket.io": "^2.3.0"
   },
   "devDependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "bull": "^3.14.0",
     "chai": "^4.2.0",
     "chai-http": "^4.3.0",
